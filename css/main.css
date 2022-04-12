@@ -1,0 +1,590 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	}
+
+
+
+header{
+	width: 100%;
+	height: 80px;
+	background: #F0F2F0;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #607D8B, #000C40);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #607D8B, #000C40); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border: 1px solid white
+}
+
+/*--- MENU DESPLEGABLE ---*/
+header label {
+	display: block;
+	width: 70px;
+	height: 80px;
+	padding: 20px 10px;
+}
+
+header label:hover {
+	cursor: pointer;
+	background: rgba(0,0,0,0.3);
+}
+
+.menu {
+	position: absolute;
+	background: #F0F2F0;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #607D8B, #000C40);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #607D8B, #000C40); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	opacity: 0.8;
+	width: 70%;
+	height: 300px;
+	margin-left: -70%;
+	transition: all 0.5s;
+	border: 1px solid #fff;
+	z-index: 1;
+	
+}
+
+.menuHamburguesa{
+	width: 40px;
+	height: 40px;
+}
+
+.menu ul {
+	flex-direction: column;
+	margin-left: 5px;
+	line-height: 55px;
+}
+
+.menu li {
+	border-top: 1px solid #fff;
+}
+
+.menu li a{
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	
+}
+
+#btn-menu{
+	display: none;
+}
+
+#btn-menu:checked ~ .menu {
+	margin: 0;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.contenedorImgLogo {
+	display: flex;
+}
+
+.imgLogo{
+	width: 180px;
+	height: auto;
+}
+
+
+
+/*--- SECCION IMG CENTRAL ---*/
+.seccion1{
+	background-image: url(../img/central-celular2.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border: 1px solid #fff;
+}
+
+.bannerImgCentral{
+	width: 100%;
+	height: 100%;
+	padding: 0 30px;
+	margin-top: 190px;
+	text-align: center;
+	color: rgb(240, 243, 165);
+	align-items: center;
+	position: relative;
+}
+
+.bannerImgCentral h1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 60px;
+	margin-bottom: 30px;
+	
+}
+
+.bannerImgCentral span{
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(240, 96, 96);
+	
+}
+
+button{
+	font-size: 20px;
+	font-weight:bold;
+	padding: 10px 30px;
+	border-radius: 5px;
+	border: 2px solid rgba(0,0,0,0.3);
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+	color: #fff;
+	background-color: rgb(240, 96, 96);
+	margin-bottom: 50px;
+}
+
+.button a{
+	text-decoration: none;
+	color: #fff;
+}
+
+button:hover {
+	background-color: rgb(160, 49, 77);
+	transition: 0.5s;
+	cursor: pointer;
+	}
+
+.wspFixed{
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+	z-index: 2;
+	width: 80px;
+	opacity: 0.8;
+}
+
+
+/*
+.contenedorImgcentral{
+border: 1px solid red;
+width: 100%;
+height: 100vh;
+
+}
+
+.imagenCentral1 {
+	width: 100%;
+	height: 100%;
+	border: 1px solid aqua;
+	
+}
+*/
+
+.imagenCentral2 {
+	display: none;
+}
+
+
+
+/*--- SECCION CUADROS ---*/
+.containerCuadros{
+	background: #FD746C;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FD746C, #FF9068);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FD746C, #FF9068); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border: 1px solid #fff;
+}
+
+.cuadros{
+	border: 1px solid #fff;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 20px;
+}
+
+.cuadros h3{
+	font-size: 20px;
+	font-weight: 900;
+	color: #fff;
+}
+
+.cuadros p{
+	font-size: 14px;
+	font-weight:600;
+	color: #fff;
+	margin-top: 7px;
+}
+
+
+.imgCuadros{
+	width: 100px;
+	height:100px
+	
+}
+
+
+/*--- SECCION FOOTER ---*/
+footer{
+	background: #F0F2F0;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #607D8B, #000C40);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #607D8B, #000C40); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border: 1px solid #fff;
+}
+
+
+.contenedorFooter{
+	width: 100%;
+	height: 80px;
+	margin: auto;
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	text-align: center;
+	
+	
+}
+
+.textoDerechos{
+	margin-top: 7px;
+	font-size: 12px;
+	color: #fff;
+}
+
+.contenedorRedes{
+	margin: 20px;
+}
+
+.iconosRedes{
+	width: 30px;
+	height: 30px;
+	margin-left: 15px;
+	opacity: 0.8;
+}
+
+.contenedorLogoFooter{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+ --- ESTILO MENU--- 
+/*header{
+grid-area: header;
+background: #F0F2F0;  /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to left, #607D8B, #000C40);  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to left, #607D8B, #000C40); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*
+}/*
+
+.navegacion{
+height: 120px;
+display: flex;
+border: 1px solid #FFFFFF;
+}
+
+.navegacion ul {
+width: 100%;
+margin-left: 150px;
+list-style-type: none;
+display: flex;
+align-items: center;
+}
+
+.navegacion ul li{
+font-size: 40px;
+letter-spacing: 2px;
+margin-left: 100px;
+margin-top: 15px;
+}
+
+.imgLogo{
+margin-left: 100px;
+margin-top: 20px;
+position: relative;
+width: 200px;
+
+}
+
+a{
+color: #ffffff;
+font-family: 'League Gothic', sans-serif;
+/*font-family: 'Agency FB', arial;
+text-decoration: none;
+}
+
+
+
+/* --- ESTILO SECCION CENTRAL--- 
+section{
+height: 100vh;
+grid-area: section;
+background-color: #FEB47B;
+}
+
+.imagenCentral {
+width: 100%;
+height: 100vh;
+border: 1px solid #FFFFFF;
+position: relative;
+}
+
+
+
+/* --- ESTILO FOOTER--- 
+footer{
+grid-area: footer;
+background-color: #007991;
+display: flex;
+border: 1px solid #D3455B;
+justify-content: space-between;
+}
+
+.contenedorUbicacion{
+display: flex;
+position: relative;
+margin-top: 10px;
+margin-left: 20px;
+}
+
+.iconoUbicacion{
+position: relative;
+width: 60px;
+height: 60px;
+top: 23px;
+margin-right: 5px;
+}
+
+.textoDireccion{
+position: relative;
+color: #ffffff;
+text-decoration: none;
+font-family: 'League Gothic', sans-serif;
+right: 10px;
+margin-top: 60px;
+font-size: 20px;
+letter-spacing: 1px;
+}
+
+.contenedorRedes{
+display: flex;
+position: relative;
+margin-top: 10px;
+align-items:flex-end;
+margin-right: 100px;
+}
+
+.iconosRedes1{
+position: relative;
+width: 40px;
+height: 40px;
+margin-top: 23px;
+margin-left: 10px;
+}   
+			
+.iconosRedes2{
+position: relative;
+width: 40px;
+height: 40px;
+margin-left: 10px;
+} 
+		
+.iconosRedes3{
+position: relative;
+width: 40px;
+height: 40px;
+margin-left: 10px;
+} 
+
+
+.textoRedes{
+position: relative;
+color: #ffffff;
+text-decoration: none;
+font-family: 'League Gothic', sans-serif;
+font-size: 22px;
+letter-spacing: 3px;
+}
+
+.textoDerechos{
+color: #ffffff;
+text-decoration: none;
+font-family: 'League Gothic', sans-serif;
+margin-top: 75px;
+letter-spacing: 1px;
+}
+
+
+
+/* --- SECCION "ACTIVIDADES" --- 
+.seccionAct{
+display: grid;
+grid-template-areas: "act1 act2"
+					 "act3 act4";
+padding: 20px;
+background-color: #FEB47B;
+border: 1px solid #D3455B;
+height: 100%;
+width:100%;
+}
+
+.act1{
+grid-area: act1;
+}
+
+.act2{
+grid-area: act2;
+}
+
+.act3{
+grid-area: act3;
+padding: 20px;
+}
+
+.act4{
+grid-area: act4;
+padding: 20px;
+}
+
+.imgAct{
+border: 2px solid  #D3455B;
+width: 500px;
+}
+	
+.textAct{
+font-family:'Roboto', sans-serif;
+color: #ffffff;
+font-size:20px;
+width: 700px;
+}
+
+.titulosAct{
+font-family: 'League Gothic', sans-serif;
+color: #ffffff;
+font-size: 60px;
+font-weight: lighter;
+letter-spacing: 3px;
+}
+
+
+
+@media only screen and (max-width:600px){
+	.seccionAct{
+	display: grid;
+	grid-template-areas: "act1"
+						 "act2"
+						 "act3"
+						 "act4";
+	padding: 20px;
+	background-color: #FEB47B;
+	border: 1px solid #D3455B;
+	height: 100%;
+	width:100%;
+	}
+	.act1{
+	grid-area: act1;
+	}
+			
+	.act2{
+	grid-area: act2;
+	}
+			
+	.act3{
+	grid-area: act3;
+	padding: 20px;
+	}
+			
+	.act4{
+	grid-area: act4;
+	padding: 20px;
+	}
+}
+
+
+
+
+/* --- SECCION "CONTACTOS" --- 
+.formulario{
+	display: block;
+	padding: 30px;
+    font-size: 18px;
+	font-weight:bold;
+	color: black;
+    text-align: left;
+    font-family:'Roboto', sans-serif;
+    padding-left: 30px;
+	line-height: 20px;
+
+	
+}
+
+.video{
+	width: 500px;
+    margin-left: 0%;
+    bottom: 80px;
+    border: 1px solid #D3455B ;
+	margin-top: 0px;
+    
+}
+
+.parrafo{
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+
+.veniConocernos {
+display: block;
+font-family: 'League Gothic', sans-serif;
+color: #ffffff;
+font-size: 40px;
+font-weight: lighter;
+padding: 30px;
+}
+
+.formulario input[type=submit]{
+	background-color: #007991;
+	width: 100px;
+	border-radius: 30px white;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center; 
+	color: #ffffff;
+ }
+ .formulario input[type=reset]{
+	background-color: #007991;
+	width: 200px;
+	border-radius: white 30px solid;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center; 
+	color: #ffffff;
+ }
+
+ .cuadros{
+	width: 200px;
+	border-radius: white 30px solid;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center; 
+	color: #ffffff;
+ }
+
+ .cuadroArea{
+	width: 500px;
+	border-radius: white 30px solid;
+	font-size: 15px;
+	font-weight: bold;
+	color: #ffffff;
+ }
+
+ .cuadroActividad{
+	width: 200px; 
+	border-radius: white 30px solid;
+	font-size: 15px;
+	font-weight: bold;
+	color: grey;
+	
+ }
+*/
