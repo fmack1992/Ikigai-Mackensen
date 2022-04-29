@@ -1,3 +1,6 @@
+.seccion1, section .containerCuadros .cuadros, footer {
+  border: 1px solid #fff; }
+
 * {
   margin: 0;
   padding: 0;
@@ -19,8 +22,7 @@ header nav div ul li a {
 .seccion1 {
   background-image: url(../img/central1.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  border: 1px solid #fff; }
+  background-size: cover; }
   .seccion1 .contenedorSeccion1 .bannerImgCentral {
     width: 100%;
     height: 100%;
@@ -73,8 +75,7 @@ section .containerCuadros {
   section .containerCuadros .cuadros {
     letter-spacing: 1px;
     text-align: center;
-    padding: 20px;
-    border: 1px solid #fff; }
+    padding: 20px; }
     section .containerCuadros .cuadros h3 {
       font-size: 20px;
       font-weight: 900;
@@ -91,7 +92,6 @@ section .containerCuadros {
 /*--- SECCION FOOTER ---*/
 footer {
   background: linear-gradient(to left, #607D8B, #000C40);
-  border: 1px solid #fff;
   width: 100%;
   height: 100px;
   text-align: center; }

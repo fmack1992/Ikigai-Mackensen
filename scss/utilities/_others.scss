@@ -1,0 +1,18 @@
+//MIXIN
+@mixin size($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+//MAP
+$hover: (
+	//key - valor
+	bg-hover: rgb(160, 49, 77),
+	time-transition: 0.5s,
+    cursor-hover: pointer,
+);
+
+//EXTEND
+%bordeGeneral{
+	border: 1px solid #fff;
+}
