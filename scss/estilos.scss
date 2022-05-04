@@ -158,6 +158,261 @@
         }
     }
 
+/*------------- PAGE ACTIVIDADES -----------------*/
+
+    .containerImg{
+        .containerImgInd1{
+            background-image: url(../img/Musculacion.jpg);
+            @include cuadrosActiv;
+            .buttonAct1{
+                @include buttonActiv;
+                background-color: rgba(201, 47, 47, 0.8);
+            }
+        }
+        .containerImgInd2{
+            background-image: url(../img/Funcional.jpg);
+            @include cuadrosActiv;
+            .buttonAct2{
+                @include buttonActiv;
+                background-color: rgba(19, 116, 24, 0.8);
+            }
+        }
+        .containerImgInd3{
+            background-image: url(../img/pilates.jpg);
+            @include cuadrosActiv;
+            .buttonAct3{
+                @include buttonActiv;
+                background-color: rgba(192, 32, 157, 0.8);
+            }
+        }
+        .containerImgInd4{
+            background-image: url(../img/Crossfit.jpg);
+            @include cuadrosActiv;
+            .buttonAct4{
+                @include buttonActiv;
+                background-color: rgba(253, 144, 71, 0.8);
+            }
+        }
+        .containerImgInd5{
+            background-image: url(../img/yoga.jpg);
+            @include cuadrosActiv;
+            .buttonAct5{
+                @include buttonActiv;
+                background-color: rgba(171, 36, 212, 0.8);
+            }
+        }
+        .containerImgInd6{
+            background-image: url(../img/Outdoor.jpg);
+            @include cuadrosActiv;
+            .buttonAct6{
+                @include buttonActiv;
+                background-color: rgba(9, 130, 201, 0.8);
+            }
+        }
+    }
+
+    /*------------- PAGE HORARIOS -----------------*/
+
+    .seccionAct{
+		padding: 55px;
+		background: #FD746C;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #FD746C, #FF9068);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #FD746C, #FF9068); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		border: 1px solid #fff;
+	}
+
+
+ /*------------- PAGE SOBRE NOSOTROS -----------------*/
+
+    .seccionSobreNosotros {
+        padding: 55px;
+        background: #FD746C;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FD746C, #FF9068) ;  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FD746C, #FF9068); /*     W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+    */
+        color: $color-letras-general;
+        font-size: 20px;
+	    font-weight:500;
+        text-align: center;
+        .titulosSobreNosotros{
+            color: $color-letras-general;
+            font-size: 40px;
+	        font-weight:bold;
+        }
+        .contenedorTexto2{
+            margin-top: 50px;
+        }
+    }
+    .seccionSobreNosotros2 {
+        padding: 0px 55px;
+        background: #FD746C;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FD746C, #FF9068) ;  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FD746C, #FF9068); /*     W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+    */
+        color: $color-letras-general;
+        font-size: 20px;
+	    font-weight:500;
+        text-align: center;
+        .tituloInstructores{
+            color: $color-letras-general;
+            font-size: 40px;
+	        font-weight:bold;
+            margin-bottom: 15px;
+        }
+        .containerProfes{
+            .containerImg1{
+                background-image: url(../img/profe1.jpg);
+                border: 2px solid white;
+                background-repeat: no-repeat;
+	            background-position: center;
+	            background-size: cover;
+	            width: 100%;
+	            height: 300px;
+                .buttonProfe1{
+                    width: 270px;
+                    height: 40px;
+                    font-size: 18px;
+                    font-weight:bold;
+                    padding-top: 5px;
+                    border-radius: 5px;
+                    border: 2px solid rgba(0,0,0,0.5);
+                    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+                    color: #fff;
+                    margin-top: 255px;
+                    background-color: rgba(171, 36, 212, 0.8);
+                    cursor:default;
+                }
+            }
+            .containerImg2{
+                background-image: url(../img/profe2.jpg);
+                border: 2px solid white;
+                background-repeat: no-repeat;
+	            background-position: top;
+	            background-size: cover;
+	            width: 100%;
+	            height: 300px;
+	            text-align: center;
+                .buttonProfe2{
+                    width: 270px;
+                    height: 40px;
+                    font-size: 18px;
+                    font-weight:bold;
+                    padding-top: 5px;
+                    border-radius: 5px;
+                    border: 2px solid rgba(0,0,0,0.5);
+                    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+                    color: #fff;
+                    margin-top: 255px;
+                    background-color: rgba(212, 36, 36, 0.8);
+                    cursor:default;
+                }
+            }
+            .containerImg3{
+                background-image: url(../img/profe3.jpg);
+                border: 2px solid white;
+                background-repeat: no-repeat;
+	            background-position:top ;
+	            background-size: cover;
+	            width: 100%;
+	            height: 300px;
+	            text-align: center;
+                .buttonProfe3{
+                    width: 270px;
+                    height: 40px;
+                    font-size: 18px;
+                    font-weight:bold;
+                    padding-top: 5px;
+                    border-radius: 5px;
+                    border: 2px solid rgba(0,0,0,0.5);
+                    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+                    color: #fff;
+                    margin-top: 255px;
+                    background-color: rgba(29, 117, 98, 0.8);
+                    cursor:default;
+                }
+            }
+            .containerImg4{
+                background-image: url(../img/profe4.jpg);
+                border: 2px solid white;
+                background-repeat: no-repeat;
+	            background-position: top;
+	            background-size: cover;
+	            width: 100%;
+	            height: 300px;
+	            text-align: center;
+                .buttonProfe4{
+                    width: 270px;
+                    height: 40px;
+                    font-size: 18px;
+                    font-weight:bold;
+                    padding-top: 5px;
+                    border-radius: 5px;
+                    border: 2px solid rgba(0,0,0,0.5);
+                    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+                    color: #fff;
+                    margin-top: 255px;
+                    background-color: rgba(36, 62, 212, 0.8);
+                    cursor:default;
+                }
+            }
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------- MEDIA QUERIES-----------------*/
 /*------ MIN 992PX------*/
 @media screen and (min-width: 992px) {
