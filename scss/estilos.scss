@@ -30,7 +30,7 @@
     }
 
 /*------------- INDEX -------------------*/
-	/*--- SECCION IMG CENTRAL ---*/
+	    /*--- SECCION IMG CENTRAL ---*/
     .seccion1{
         background-image: url(../img/central1.jpg);
         background-repeat: no-repeat;
@@ -100,7 +100,7 @@
         }
     }
 
-    	/*--- SECCION CUADROS ---*/
+        /*--- SECCION CUADROS ---*/
     section{
         .containerCuadros{
             background: $color-secciones-gral;
@@ -111,12 +111,11 @@
                 @extend %bordeGeneral;
                 h3{
                     font-size: 20px;
-                    font-weight: 900;
+                    font-weight: 600;
                     color: $color-letras-general;
                 }
                 p{
-                    font-size: 14px;
-                    font-weight:600;
+                    font-size: 20px;
                     color: $color-letras-general;
                     margin-top: 7px; 
                 }
@@ -160,75 +159,51 @@
 
 /*------------- PAGE ACTIVIDADES -----------------*/
 
-    .containerImg{
-        .containerImgInd1{
-            background-image: url(../img/Musculacion.jpg);
-            @include cuadrosActiv;
-            .buttonAct1{
-                @include buttonActiv;
-                background-color: rgba(201, 47, 47, 0.8);
-            }
-        }
-        .containerImgInd2{
-            background-image: url(../img/Funcional.jpg);
-            @include cuadrosActiv;
-            .buttonAct2{
-                @include buttonActiv;
-                background-color: rgba(19, 116, 24, 0.8);
-            }
-        }
-        .containerImgInd3{
-            background-image: url(../img/pilates.jpg);
-            @include cuadrosActiv;
-            .buttonAct3{
-                @include buttonActiv;
-                background-color: rgba(192, 32, 157, 0.8);
-            }
-        }
-        .containerImgInd4{
-            background-image: url(../img/Crossfit.jpg);
-            @include cuadrosActiv;
-            .buttonAct4{
-                @include buttonActiv;
-                background-color: rgba(253, 144, 71, 0.8);
-            }
-        }
-        .containerImgInd5{
-            background-image: url(../img/yoga.jpg);
-            @include cuadrosActiv;
-            .buttonAct5{
-                @include buttonActiv;
-                background-color: rgba(171, 36, 212, 0.8);
-            }
-        }
-        .containerImgInd6{
-            background-image: url(../img/Outdoor.jpg);
-            @include cuadrosActiv;
-            .buttonAct6{
-                @include buttonActiv;
-                background-color: rgba(9, 130, 201, 0.8);
+    .animate__animated1{
+        animation-duration: 3s;
+    }
+    .row{
+        justify-content: center;
+        background: $color-secciones-gral;
+        border: 1px solid #fff;
+        .col{
+            width: 500px;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            .card{
+                background: $color-cards-activ;
+                border: 2px solid #fff;
+                color: white;
+                .card-img-top{
+                    @include size (100%, 250px);
+                }
+                .card-body{
+                    border-top: 2px solid #fff;
+                    .card-title{
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                }
             }
         }
     }
 
-    /*------------- PAGE HORARIOS -----------------*/
+/*------------- PAGE HORARIOS -----------------*/
 
     .seccionAct{
 		padding: 55px;
-		background: #FD746C;  /* fallback for old browsers */
-		background: -webkit-linear-gradient(to right, #FD746C, #FF9068);  /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to right, #FD746C, #FF9068); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		background: $color-secciones-gral;
 		border: 1px solid #fff;
+        height: 760px;
 	}
 
 
- /*------------- PAGE SOBRE NOSOTROS -----------------*/
+/*------------- PAGE SOBRE NOSOTROS -----------------*/
 
     .seccionSobreNosotros {
-        padding: 55px;
-        background: #FD746C;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #FD746C, #FF9068) ;  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #FD746C, #FF9068); /*     W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+    */
+        padding: 20px;
+        background: $color-secciones-gral;
         color: $color-letras-general;
         font-size: 20px;
 	    font-weight:500;
@@ -244,9 +219,7 @@
     }
     .seccionSobreNosotros2 {
         padding: 0px 55px;
-        background: #FD746C;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #FD746C, #FF9068) ;  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #FD746C, #FF9068); /*     W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+    */
+        background: $color-secciones-gral;
         color: $color-letras-general;
         font-size: 20px;
 	    font-weight:500;
@@ -260,162 +233,109 @@
         .containerProfes{
             .containerImg1{
                 background-image: url(../img/profe1.jpg);
-                border: 2px solid white;
-                background-repeat: no-repeat;
-	            background-position: center;
-	            background-size: cover;
-	            width: 100%;
-	            height: 300px;
+                @include containerProfes;
                 .buttonProfe1{
-                    width: 270px;
-                    height: 40px;
-                    font-size: 18px;
-                    font-weight:bold;
-                    padding-top: 5px;
-                    border-radius: 5px;
-                    border: 2px solid rgba(0,0,0,0.5);
-                    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-                    color: #fff;
-                    margin-top: 255px;
+                    @include buttonProfes;
                     background-color: rgba(171, 36, 212, 0.8);
-                    cursor:default;
                 }
             }
             .containerImg2{
                 background-image: url(../img/profe2.jpg);
-                border: 2px solid white;
-                background-repeat: no-repeat;
-	            background-position: top;
-	            background-size: cover;
-	            width: 100%;
-	            height: 300px;
-	            text-align: center;
-                .buttonProfe2{
-                    width: 270px;
-                    height: 40px;
-                    font-size: 18px;
-                    font-weight:bold;
-                    padding-top: 5px;
-                    border-radius: 5px;
-                    border: 2px solid rgba(0,0,0,0.5);
-                    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-                    color: #fff;
-                    margin-top: 255px;
+                @include containerProfes;
+	            .buttonProfe2{
+                    @include buttonProfes;
                     background-color: rgba(212, 36, 36, 0.8);
-                    cursor:default;
                 }
             }
             .containerImg3{
                 background-image: url(../img/profe3.jpg);
-                border: 2px solid white;
-                background-repeat: no-repeat;
-	            background-position:top ;
-	            background-size: cover;
-	            width: 100%;
-	            height: 300px;
-	            text-align: center;
-                .buttonProfe3{
-                    width: 270px;
-                    height: 40px;
-                    font-size: 18px;
-                    font-weight:bold;
-                    padding-top: 5px;
-                    border-radius: 5px;
-                    border: 2px solid rgba(0,0,0,0.5);
-                    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-                    color: #fff;
-                    margin-top: 255px;
+                @include containerProfes;
+	            .buttonProfe3{
+                    @include buttonProfes;
                     background-color: rgba(29, 117, 98, 0.8);
-                    cursor:default;
                 }
             }
             .containerImg4{
                 background-image: url(../img/profe4.jpg);
-                border: 2px solid white;
-                background-repeat: no-repeat;
-	            background-position: top;
-	            background-size: cover;
-	            width: 100%;
-	            height: 300px;
-	            text-align: center;
-                .buttonProfe4{
-                    width: 270px;
-                    height: 40px;
-                    font-size: 18px;
-                    font-weight:bold;
-                    padding-top: 5px;
-                    border-radius: 5px;
-                    border: 2px solid rgba(0,0,0,0.5);
-                    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-                    color: #fff;
-                    margin-top: 255px;
-                    background-color: rgba(36, 62, 212, 0.8);
-                    cursor:default;
+                @include containerProfes;
+	            .buttonProfe4{
+                    @include buttonProfes;
+                    background-color: rgba(180, 172, 59, 0.8);
+                }
+            }
+            .containerImg5{
+                background-image: url(../img/profe5.jpg);
+                @include containerProfes;
+	            .buttonProfe5{
+                    @include buttonProfes;
+                    background-color: rgba(36, 156, 212, 0.8);
+                }
+            }
+            .containerImg6{
+                background-image: url(../img/profe6.jpg);
+                @include containerProfes;
+	            .buttonProfe6{
+                    @include buttonProfes;
+                    background-color: rgba(255, 171, 61, 0.8);
+                }
+            }     
+        }
+    }
+
+/*------------- PAGE CONTACTO -----------------*/
+    .seccionContacto{
+        background: $color-secciones-gral;
+        padding:  1.5em;
+        h2{
+            color: #fff;
+            font-size: 40px;
+            font-weight:bold;
+        }
+        .contenedor1{
+            padding: 1.5em;
+           .tituloVideo{
+                color: #fff;
+                font-size: 30px;
+                font-weight:bold;
+                text-align: center;
+                padding-top: 20px;
+            }
+            .video{
+                @include size (100%, 400px);
+            }
+            .contenedorUbicacion{
+                text-align: center;
+                .ubicacion{
+                    @include size (100%, 300px);
+                    padding-top: 20px;
+                }
+            }
+            .contenedorForm{
+                margin: 0;
+                padding: 1em;
+                form{
+                    p{
+                        color: #fff
+                    }
+                    .parrafosForm{
+                        @include elementsForm;
+                    }
+                    .buttonForm{
+                        @include elementsForm;
+                        background-color:rgb(15, 136, 136);
+                        border: 0;
+                        text-transform: uppercase;
+                        padding: 1em;
+                    }    
                 }
             }
         }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*------------- MEDIA QUERIES-----------------*/
-/*------ MIN 992PX------*/
-@media screen and (min-width: 992px) {
+    }
+        
+ 
+    /*--------------------- MEDIA QUERIES----------------------*/
+            /*------ DESKTOP - MIN 992PX------*/
+    @media screen and (min-width: 992px) {
 	
     /*------------- INDEX -------------------*/
         /*--- SECCION IMG CENTRAL ---*/
@@ -427,7 +347,7 @@
                 margin-top: 190px;
                 display: grid;
                 grid-template-areas: "bannerText bannerText "
-                                    "button1 button2";
+                                     "button1 button2";
                     .bannerText{
                         grid-area: bannerText;
                         h1{
@@ -437,12 +357,12 @@
                             display: flex;
                             flex-direction: column;
                         }
-                    .buttonIndex{
-                        font-size: 30px;
-                        font-weight:500;
-                        font-family: 'Roboto', sans-serif;
+                        .buttonIndex{
+                            font-size: 30px;
+                            font-weight:500;
+                            font-family: 'Roboto', sans-serif;
+                        }
                     }
-                }
                     .button1{
                         grid-area: button1;
                         margin-top: 180px;
@@ -455,7 +375,6 @@
                         text-align: start;
                         margin-top: 180px;
                     }
-                    
             }
         }
     }
@@ -491,26 +410,186 @@
 
     footer{
        .contenedorFooter{
-                justify-content: space-between;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             .textoDerechos{
                 margin-top: 10px;
                 display: flex;
                 margin-left: 20px;
             }
-
             .contenedorLogoFooter{
                 display: flex;
                 margin-top: 5px;
             }
-            
             .contenedorRedes{
                 margin-right: 130px;
 	            display: flex;
             }
         }
+    }
+
+
+    /*------------- PAGE ACTIVIDADES -------------------*/
+    .containerImg{
+        display: grid;
+        grid-template-areas: "activ1 activ2 activ3"
+                             "activ4 activ5 activ6";
+        background: $color-secciones-gral;                    
+        height: 758px;
+        padding-top: 50px;
+        .containerImgInd1{
+            grid-area: activ1;
+            @include size (100%, 300px);
+            margin-top: 25px;
+            .buttonAct1{
+                margin-top: 240px;
+            }
+        }
+        .containerImgInd2{
+            grid-area: activ2;
+            @include size (100%, 300px);
+            margin-top: 25px;
+            .buttonAct2{
+                margin-top: 240px;
+            }
+        }
+        .containerImgInd3{
+            grid-area: activ3;
+            @include size (100%, 300px);
+            margin-top: 25px;
+            .buttonAct3{
+                margin-top: 240px;
+            }
+        }
+        .containerImgInd4{
+            grid-area: activ4;
+            @include size (100%, 300px);
+            .buttonAct4{
+                margin-top: 240px;
+            }
+        }
+        .containerImgInd5{
+            grid-area: activ5;
+            @include size (100%, 300px);
+            margin-bottom: 83px;
+            .buttonAct5{
+                margin-top: 240px;
+            }
+        }
+        .containerImgInd6{
+            grid-area: activ6;
+            @include size (100%, 300px);
+            .buttonAct6{
+                margin-top: 240px;
+            }
+        }
+    }
+
+
+    /*------------- PAGE SOBRE NOSOTROS -------------------*/
+    .seccionSobreNosotros2{
+        .containerProfes{
+            display: grid;
+            grid-template-areas: "profe1 profe2 profe3"
+                                 "profe4 profe5 profe6";
+            justify-content: center;
+            padding-bottom: 55px;
+            .containerImg1{
+                grid-area: profe1;
+                width: 300px;
+                text-align: none;
+            }
+            .containerImg2{
+                grid-area: profe2;
+                width: 300px;
+            }
+            .containerImg3{
+                grid-area: profe3;
+                width: 300px;
+            }
+            .containerImg4{
+                grid-area: profe4;
+                width: 300px;
+            }
+            .containerImg5{
+                grid-area: profe5;
+                width: 300px;
+            }
+            .containerImg6{
+                grid-area: profe6;
+                width: 300px;
+            }
+        }
+    }
+
+    /*------------- PAGE CONTACTO -------------------*/
+    .seccionContacto{
+        height: 100vh;
+        .tituloContacto{
+            text-align: center;
+        }
+        .contenedor1{
+            display: flex;
+            justify-content: center;
+            .contenedorForm{
+                width: 500px;
+            }
+            .contenedorVideo{
+                width: 700px;
+                margin-left: 100px;
+            }
+            .contenedorUbicacion{
+                display: none;
+            }
+        }
+    }
 }
+
+
+    /*--------------------- MEDIA QUERIES----------------------*/
+            /*------ TABLET - MIN 576PX------*/
+        @media screen and (min-width: 576px) and (max-width:992px) {
+    /*------------- PAGE SOBRE NOSOTROS -------------------*/
+    .seccionSobreNosotros2{
+        .containerProfes{
+            display: grid;
+            grid-template-areas: "profe1 profe2"
+                                 "profe3 profe4"
+                                 "profe5 profe6";
+            justify-content: center;
+            padding-bottom: 55px;
+            .containerImg1{
+                grid-area: profe1;
+                width: 300px;
+                text-align: none;
+            }
+            .containerImg2{
+                grid-area: profe2;
+                width: 300px;
+            }
+            .containerImg3{
+                grid-area: profe3;
+                width: 300px;
+            }
+            .containerImg4{
+                grid-area: profe4;
+                width: 300px;
+            }
+            .containerImg5{
+                grid-area: profe5;
+                width: 300px;
+            }
+            .containerImg6{
+                grid-area: profe6;
+                width: 300px;
+            }
+        }
+    }
+
+    /*------------- PAGE CONTACTO -------------------*/
+    .seccionContacto{
+        text-align: center;
+    }
 }
